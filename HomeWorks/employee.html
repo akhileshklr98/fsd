@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="./myScript.js"></script>
+    <title>Employee</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div></div>
+            <div>
+                <form action="">
+                    <table class="table table-borderless" style="width: 100%">
+                        <tr>
+                            <td>Employee ID</td>
+                            <td><input type="text" id="txtEmployeeID"></td>
+                        </tr>
+                        <tr>
+                            <td>Employee Name</td>
+                            <td><input type="text" id="txtEmployeeName"></td>
+                        </tr>
+                        <tr>
+                            <td>Address</td>
+                            <td><textarea name="" id="txtAddress" cols="30" rows="10"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>Salary</td>
+                            <td><input type="number" id="txtSalary"></td>
+                        </tr>
+                        <tr>
+                            <td>Designation</td>
+                            <td><input type="text" id="txtDesignation"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><button type="button" class="btn btn-success" onclick="ShowEmployeeData()">Submit</button></td>
+                        </tr>
+                    </table>
+                </form>
+                    
+            </div>
+            <div></div>
+        </div>
+        <div class="row">
+            <table class="table table-borderless">
+                <tr>
+                    <td>ID</td>
+                    <td id="tdID"></td>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td id="tdName"></td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td id="tdAddress"></td>
+                </tr>
+                <tr>
+                    <td>Salary</td>
+                    <td id="tdSalary"></td>
+                </tr>
+                <tr>
+                    <td>Designation</td>
+                    <td id="tdDesignation"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+</body>
+</html>

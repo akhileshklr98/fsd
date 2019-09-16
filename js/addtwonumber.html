@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+
+</head>
+<body>
+    <form action="">
+        <table class="table table-borderless">
+            <tr>
+                <td>Number1</td>
+                <td><input type="number" name="" id="num1" class="from-control"></td>
+            </tr>
+            <tr>
+                <td>Number2</td>
+                <td><input type="number" name="" id="num2" class="from-control"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="button" id="btnAdd" class="btn btn-primary">Add</button></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td id="result"></td>
+            </tr>
+        </table>
+    </form>
+
+    <script>
+            $(document).ready( ()=>{
+    
+                add = (x,y,callback)=>{
+                    var z=x+y;
+                    console.log(z);
+    
+                    callback(z);
+                }
+         
+                disp = (result)=>{
+                    console.log('Success '+ result);
+                }
+                $('#btnAdd').click( ()=>{
+                    var a = parseInt($('#num1').val());
+                    var b = parseInt($('#num2').val());
+                    
+                    add(a,b,disp);
+                });
+            });
+        </script>
+</body>
+</html>

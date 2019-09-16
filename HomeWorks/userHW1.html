@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./myScript.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>User</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col col-12 col-sm-6">
+                <form action="">
+                    <h4><center>Login</center></h4>
+                    <table class="table table-borderless" style="background-color: #ecf0f1">
+                        <tr>
+                            <td><label for="UserName">UserName</label></td>
+                            <td><input type="text" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Password">Password</label></td>
+                            <td><input type="password" name="" id="" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><button type="submit" class="btn btn-success form-control">Login</button></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="col col-12 col-sm-6">
+                <form action="">
+                    <h4><center>Register</center></h4>
+                    <table class="table table-borderless" style="background-color: #bdc3c7">
+                            <tr>
+                                <td>Name</td>
+                                <td><input type="text" id="txtName" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Address</td>
+                                <td><textarea name="" id="txtAddress" cols="21" rows="5" class="form-control"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td>DOB</td>
+                                <td><input type="date" name="" id="txtdob" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Mobile</td>
+                                <td><input type="number" class="form-control" id="txtMobile"></td>
+                            </tr>
+                            <tr>
+                                <td>Email</td>
+                                <td><input type="email" name="" id="txtEmail" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>UserName</td>
+                                <td><input type="text" id="txtUsername" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Password</td>
+                                <td><input type="password" name="" id="txtPassword" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Confirm Password</td>
+                                <td><input type="password" name="" id="txtConfirm" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><button type="button" onclick="ShowUserData()" class="btn btn-primary">Submit</button></td>
+                            </tr>
+                        </table>
+                        <table class="table table-borderless">
+                            <tr>
+                                <td>Name</td>
+                                <td><p id="result"></p></td>
+                            </tr>
+                            <tr>
+                                <td>Address</td>
+                                <td><p id="address"></p></td>
+                            </tr>
+                            <tr>
+                                <td>DOB</td>
+                                <td><p id="dob"></p></td>
+                            </tr>
+                            <tr>
+                                <td>Mobile</td>
+                                <td><p id="mobile"></p></td>
+                            </tr>
+                            <tr>
+                                <td>Email</td>
+                                <td><p id="email"></p></td>
+                            </tr>
+                            <tr>
+                                <td>Username</td>
+                                <td><p id="username"></p></td>
+                            </tr>
+                            <tr>
+                                <td>Password</td>
+                                <td><p id="password"></p></td>
+                            </tr>
+                        </table>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

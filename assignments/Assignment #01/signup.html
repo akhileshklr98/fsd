@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Library</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <script src="myscript.js"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm navbar-light">
+        <ul class="navbar navbar-nav navbar-expand-sm" id="menuList">
+            <li class="nav-item">
+                <a class="nav-link" href="./index.html" id="myLink">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="" id="myLink">Category</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="" id="myLink">Category</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="" id="myLink">Category</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="" id="myLink">Category</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex" id="loginList">
+            <li class="nav-item active">
+                <a href="./signup.html" class="nav-link" id="myLink">Sign Up</a>
+            </li>
+            <li class="nav-item">
+                <a href="./signin.html" class="nav-link" id="myLink">Sign In</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <div id="row1">
+        <h4>Library</h4>
+        <div id="box"></div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div id="row3"></div>
+            <div id="row2">
+                <form action="">
+                    <h3><center>Sign Up</center></h3>
+                    <table class="table table-borderless" id="myTable">
+                        <tr>
+                            <td>Name</td>
+                            <td><input type="text" id="txtName" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td>Address</td>
+                            <td><textarea name="" id="txtAddress" cols="21" rows="5" class="form-control"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>DOB</td>
+                            <td><input type="date" name="" id="txtdob" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td>Mobile</td>
+                            <td><input type="number" class="form-control" id="txtMobile"></td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td><input type="email" name="" id="txtEmail" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td>UserName</td>
+                            <td><input type="text" id="txtUsername" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td>Password</td>
+                            <td><input type="password" name="" id="txtPassword" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td>Confirm Password</td>
+                            <td><input type="password" name="" id="txtConfirm" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><button type="button" class="btn btn-primary form-control" onclick="onValidate()">Submit</button></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div id="row3"></div>
+        </div>
+    </div>
+
+</body>
+</html>

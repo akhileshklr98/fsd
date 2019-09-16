@@ -1,0 +1,90 @@
+body{
+    background-color: #dcdde1;
+}
+nav {
+    background-color: #273c75; 
+    height: 50px;
+}
+#menuList {
+    padding-left: 80px;
+}
+#myLink {
+    color: #c8d6e5;
+}
+li.active {
+    color: #ffffff;
+}
+#loginList {
+    padding-right: 70px;
+}
+#row1 {
+    position: relative;
+    height: 200px;
+    background-color: #130f40;
+}
+#row2 {
+    position: relative;
+    background-color: #ffffff; 
+    width: 1400px; 
+    height: 100%;
+    top: -40px;
+}
+#row3 {
+    width: 10px;
+}
+h4 {
+    color: #ffffff; 
+    padding-top: 50px; 
+    padding-bottom: 50px; 
+    padding-left: 105px;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+#myTable {
+    background-color: #ecf0f1;
+    width: 50%;
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+.cardData {
+    padding: 40px;
+}
+
+img {
+    border-radius: 50%;
+    width:90px; 
+    height:90px;
+  }
+
+#box {
+    background-color:#273c75; 
+    width: 400px; 
+    height: 100px; 
+    position: relative; 
+    top: -150px; 
+    left: 850px
+}
+
+.texts {
+    display: inline;
+    padding-top: 50px;
+}
+
+.boxText {
+    background-color: #636e72;
+    color: #ffffff;
+    font-size: 13px;
+    width: fit-content;
+}
+
+h6 {
+    color: #636e72;
+}
+
+.time {
+    color: #636e72;
+    font-size: 12px; 
+    font-family: 'Bookman Old Style', Courier, monospace
+}

@@ -1,0 +1,10 @@
+body{
+    background-color:#ffffff;
+}
+.myTable{
+    background-color: green;
+    margin-top: 50px;
+}
+.btnSubmit{
+    background-color: yellow
+}

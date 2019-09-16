@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Calculations</title>
+    <script src="./myScript.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div></div>
+            <div>
+                <form action="">
+                    <table class="table table-borderless">
+                        <tr>
+                            <td>Number1</td>
+                            <td><input type="number" name="" id="txtNumber1"></td>
+                        </tr>
+                        <tr>
+                            <td>Number2</td>
+                            <td><input type="number" name="" id="txtNumber2"></td>
+                        </tr>
+                        <tr>
+                            <td>Operator</td>
+                            <td>
+                                <select name="selOperator" id="selOperator" onchange="Operation()">
+                                    <option value="">Select Operator</option>
+                                    <option value="add">Addition</option>
+                                    <option value="sub">Substraction</option>
+                                    <option value="mul">Multiplication</option>
+                                    <option value="div">Divison</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Result</td>
+                            <td id="result"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div></div>
+        </div>
+    </div>
+    
+</body>
+</html>

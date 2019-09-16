@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Library</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <script src="myscript.js"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm navbar-light">
+        <ul class="navbar navbar-nav navbar-expand-sm" id="menuList">
+            <li class="nav-item active">
+                <a class="nav-link" href="./index.html" id="myLink">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="" id="myLink">Category</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="" id="myLink">Category</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="" id="myLink">Category</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="" id="myLink">Category</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex" id="loginList">
+            <li class="nav-item">
+                <a href="./signup.html" class="nav-link" id="myLink">Sign Up</a>
+            </li>
+            <li class="nav-item">
+                <a href="./signin.html" class="nav-link" id="myLink">Sign In</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <div id="row1">
+        <h4>Library</h4>
+        <div id="box"></div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div id="row3"></div>
+            <div id="row2">
+                <div class="card" style="width: 100%;">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="cotainer">
+                                <div class="row">
+                                    <div class="cardData">
+                                        <img src="./photos/stylish-boy-2269508_960_720.jpg" alt="">
+                                        <!-- <img src="data:image/jpeg;base64,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"> -->
+                                    </div>
+                                    <div class="texts"> 
+                                        <h6>Repurpose Content to Reach a Wider Audience</h6>
+                                        <p class="boxText">97thfloor.com</p>
+                                        <p class="time">2 hours ago . Read More</p>
+                                    </div>
+                                </div>  
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="cotainer">
+                                <div class="row">
+                                    <div class="cardData">
+                                        <img src="./photos/download.jpg" alt="">
+                                    </div>
+                                    <div class="texts"> 
+                                        <h6>14 Useful Site For Designers</h6>
+                                        <p class="boxText">devgarage.com</p>
+                                        <p class="time"></p>
+                                    </div>
+                                </div>  
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="row3"></div>
+        </div>
+    </div>
+
+</body>
+</html>
