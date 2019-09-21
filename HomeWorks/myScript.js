@@ -77,3 +77,69 @@ function Operation(){
     }
     document.getElementById('result').innerHTML=res;
 }
+
+$(document).ready( ()=>{
+    $.ajax({
+        type: "GET",
+        url: "https://jsonplaceholder.typicode.com/photos",
+        success: (result)=>{
+            // console.log(result);
+            output = "";
+            for (var i in result) {
+                var title = result[i].title;
+                var image = result[i].url;
+                output +="<div class='card' style='width:100%; height:100px'><img src='"+image+"' alt='"+title+"'><div class='card-body'><p class='card-text'>"+title+"</p></div></div>";
+            }
+            // output += "</div>";
+            $('.resultPhotos').html(output);
+        }
+    });
+
+    $.ajax({
+        type: "GET",
+        url: "https://jsonplaceholder.typicode.com/albums",
+        success: (result)=>{
+            var output = "<table class='table'><thead><tr><th>ID</th><th>Title</th></tr></thead><tbody>";
+            for (var i in result) {
+                var id = result[i].id;
+                var title = result[i].title;
+                output += "<tr><td>"+id+"</td><td>"+title+"</td</tr>";
+            }
+            output += "</tbody></table>";
+            $('.resultAlbums').html(output);
+        }
+    });
+
+    $.ajax({
+        type: "GET",
+        url: "https://jsonplaceholder.typicode.com/posts",
+        success: (result)=>{
+            var output = "<table class='table table-border'><thead><tr><th>ID</th><th>Title</th><th>Body</th></tr></thead><tbody>";
+            for (var i in result) {
+                var id = result[i].id;
+                var title = result[i].title;
+                var body = result[i].body;
+                output +="<tr><td>"+id+"</td><td>"+title+"</td><td>"+body+"</td></tr>";
+            }
+            output +="</tbody></table>";
+            $('.resultPosts').html(output);
+        }
+    });
+
+    $.ajax({
+        type: "GET",
+        url: "https://jsonplaceholder.typicode.com/comments",
+        success: (result)=>{
+            var output = "<table class='table table-border'><thead><tr><th>ID</th><th>Name</th><th>Email</th><th>Body</th></tr></thead><tbody>";
+            for (var i in result) {
+                var id = result[i].id;
+                var name = result[i].name;
+                var email = result[i].email;
+                var body = result[i].body;
+                output +="<tr><td>"+id+"</td><td>"+name+"</td><td>"+email+"</td><td>"+body+"</td></tr>";
+            }
+            output +="</tbody></table>";
+            $('.resultComments').html(output);
+        }
+    });
+});
