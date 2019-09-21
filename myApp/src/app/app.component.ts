@@ -16,4 +16,8 @@ export class AppComponent {
       this.btnClick=true;
     },5000);
   }
+
+  changeCourse=()=>{
+    this.course="Means Stack Development";
+  }
 }
