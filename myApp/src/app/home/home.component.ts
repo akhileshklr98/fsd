@@ -7,7 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  title = 'myApp';
+  name = "Akhilesh";
+  course = "Full Stack Development";
+
+  btnClick = false;
+  constructor(){
+    setTimeout( ()=>{
+      this.btnClick=true;
+    },5000);
+  }
+
+  changeCourse=()=>{
+    this.course="Means Stack Development";
+  }
 
   ngOnInit() {
   }
