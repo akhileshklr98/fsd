@@ -9,6 +9,8 @@ import { AddcourseComponent } from './addcourse/addcourse.component';
 import { ViewcourseComponent } from './viewcourse/viewcourse.component';
 
 import { Routes,RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
+import { from } from 'rxjs';
 
 const appRoute:Routes=[
   {
@@ -36,6 +38,7 @@ const appRoute:Routes=[
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     RouterModule.forRoot(appRoute)
   ],
   providers: [],

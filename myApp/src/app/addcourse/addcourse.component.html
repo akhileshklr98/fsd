@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col col-12 col-sm-4"></div>
     <div class="col col-12 col-sm-4">
-        <form action=""></form>
+        <form (ngSubmit)="readValues(myData)" #myData="ngForm">
         <table class="table table-borderless">
             <thead>
                 <th colspan="2"><h3 style="text-align: center">Add Course</h3></th>
@@ -9,30 +9,31 @@
             <tbody>
                 <tr>
                     <td>Course Title</td>
-                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control" name="courseTitle" ngModel></td>
                 </tr>
                 <tr>
                     <td>Course Description</td>
-                    <td><textarea cols="30" rows="10" class="form-control"></textarea></td>
+                    <td><textarea cols="30" rows="10" class="form-control" name="courseDescription" ngModel></textarea></td>
                 </tr>
                 <tr>
                     <td>Course Duration</td>
-                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control" name="courseDuration" ngModel></td>
                 </tr>
                 <tr>
-                    <td>Venu</td>
-                    <td><input type="text" class="form-control"></td>
+                    <td>Venue</td>
+                    <td><input type="text" class="form-control" name="courseVenue" ngModel></td>
                 </tr>
                 <tr>
                     <td>Date</td>
-                    <td><input type="date" class="form-control"></td>
+                    <td><input type="date" class="form-control" name="courseDate" ngModel></td>
                 </tr>
                 <tr>
                     <td></td>
-                    <td><Button type="button" class="btn btn-success">Submit</Button></td>
+                    <td><Button type="submit" class="btn btn-success">Submit</Button></td>
                 </tr>
             </tbody>
         </table>
+    </form>
     </div>
     <div class="col col-12 col-sm-4"></div>
 </div>

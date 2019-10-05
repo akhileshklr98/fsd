@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col col-12 col-sm-3"></div>
     <div class="col col-12 col-sm-6">
-        <form action="">
+        <form>
             <table class="table table-borderless">
                 <tr>
                     <th colspan="2" style="text-align: center">Product Entry</th>
@@ -37,7 +37,7 @@
                 </tr>
                 <tr>
                     <td></td>
-                    <td><Button type="button" class="form-control btn btn-success">Submit</Button></td>
+                    <td><Button type="button" class="form-control btn btn-success" (onsubmit)='readValues()'>Submit</Button></td>
                 </tr>
             </table>
         </form>

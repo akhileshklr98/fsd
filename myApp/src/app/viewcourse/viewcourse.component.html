@@ -1,1 +1,35 @@
-<p>viewcourse works!</p>
+<p *ngIf="!status else displayData">Featching Data From The Server</p>
+
+<ng-template #displayData>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Course Title</th>
+            <th>Course Description</th>
+            <th>Course Duration</th>
+            <th>Course Venue</th>
+            <th>Course Data</th>
+        </tr>
+
+        <tr *ngFor = "let data of myData">
+            <td>
+                {{ data.courseTitle }}
+            </td>
+            <td>
+                {{data.courseDescription}}
+            </td>
+            <td>
+                {{data.courseDuration}}
+            </td>
+            <td>
+                {{data.courseVenue}}
+            </td>
+            <td>
+                {{data.courseDate}}
+            </td>
+        </tr>
+    </thead>
+</table>
+
+</ng-template>
